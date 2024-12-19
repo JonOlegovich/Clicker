@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Eater&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clicker Game</title>
 </head>
+
 <body>
-    
+    <div class="main">
+        <div class="main-name">
+            <h1>WELCOME TO ZOMBIELAND</h1>
+        </div>
+        <div class="container">
+            <ul class="main-navbar">
+                <li class="navbar-menu">Start Game</li>
+                <li class="navbar-menu">How To Play</li>
+                <li class="navbar-menu">Developers</li>
+            </ul>
+        </div>
+    </div>
+
+    <audio class="mouseclick" src="./songs/clickmenu.mp3"></audio>
+    <audio class="mousemove" src="./songs/mouseover.mp3"></audio>
+    <audio class="bg-music" src="./songs/bg-music.mp3"></audio>
 </body>
 <script src="./main.js"></script>
+<script src="./songs.js"></script>
+
 </html>
