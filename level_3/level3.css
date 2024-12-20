@@ -9,6 +9,19 @@ html,body{
     height: 100%;
     background-image: url(img/fon.jpg);
 }
+.player{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 10;
+    width: 650px;
+    height: 350px;
+   
+    background-repeat: no-repeat;
+    background-image: url(imgplayers/image3-18-removebg-preview.png);
+    border: 2px solid green;
+}
 .enemy_1{
     position: absolute;
     top: 10%;
@@ -36,8 +49,9 @@ html,body{
     position: absolute;
     z-index: 5;
     left: 50%;
-    top: 30%;
+    top: 20%;
     background-image: url(gif/craig-mullins-zombie-boss-03-a-unscreen.gif);
+    background-size: cover;
     width: 400px;
     height: 400px;
     transform: translate(-50% , -50%);
