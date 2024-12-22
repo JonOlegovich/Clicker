@@ -11,8 +11,8 @@ html,body{
 }
 .player{
     position: absolute;
-    top: 40%;
-    left: 50%;
+    top: 44%;
+    left: 60%;
     transform: translate(-50%);
     z-index: 10;
     width: 650px;
@@ -22,6 +22,13 @@ html,body{
     background-image: url(imgplayers/image3-18-removebg-preview.png);
     border: 2px solid green;
 }
+.playerXp{
+    width: 300px;
+    height: 50px;
+    border: 1px solid red;
+    margin-left: 20px;
+    
+}
 .enemy_1{
     position: absolute;
     top: 10%;
@@ -30,8 +37,8 @@ html,body{
     border: 2px solid red;
     background-image: url(gif/craig-mullins-boss-02-stomp-unscreen\ \(1\).gif);
     background-size: cover;
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
 }
 .enemy_2{
     position: absolute;
@@ -40,19 +47,82 @@ html,body{
     z-index: 1;
     border: 2px solid red;
     background-image: url(gif/bloggif_676327540f6eb.gif);
+    background-size: cover;
     
-    
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 150px;
 }
-.enemy_boss{
+
+
+.boss{
     position: absolute;
     z-index: 5;
     left: 50%;
-    top: 20%;
-    background-image: url(gif/craig-mullins-zombie-boss-03-a-unscreen.gif);
-    background-size: cover;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 400px;
     height: 400px;
     transform: translate(-50% , -50%);
+    border: 2px solid blue;
+}
+
+.enemy_boss{
+    
+    
+    
+    background-image: url(gif/craig-mullins-zombie-boss-03-a-unscreen.gif);
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+    
+}
+
+.xpEnemy{
+    width: 350px;
+    height: 20px;
+    border: 1px solid rgb(28, 222, 41);
+    border-radius: 5px;
+    background-color: red;
+}
+
+
+.inventory{
+  position: relative;
+  top: calc(100% - 150px);
+  left: 2% ;
+  width: 200px;
+    display: flex;
+    gap: 10px;
+}
+
+.inventory .xp{
+    display: flex;
+    justify-content: flex-end;
+    width: 60px;
+    height: 60px;
+    border: 1px solid blue;
+}
+.inventory .weapon{
+    display: flex;
+    justify-content: flex-end;
+    width: 60px;
+    height: 60px;
+    border: 1px solid blue;
+}
+
+.inventory .xp .literal{
+    
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(221, 39, 202);
+    color: aqua;
+}
+.inventory .weapon .literal{
+    
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(221, 39, 202);
+    color: aqua;
 }
