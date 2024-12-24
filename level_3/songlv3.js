@@ -21,6 +21,6 @@ let block = document.getElementsByClassName("xpEnemy")
 
 playKick.addEventListener("click",()=>{
 
-    block.style.backgroundColor = "blue"
+    document.querySelector('.decrease').style.width = "90%"
     console.log ("red")
 })
