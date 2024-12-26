@@ -9,7 +9,18 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     user-select: none;
+    position: relative;
+    overflow: hidden;
+}
 
+a {
+    outline: none;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgba(0, 0, 1, 0.8);
 }
 
 body::before {
@@ -105,3 +116,37 @@ li:hover {
 .container {
     width: 400px;
 }
+
+.devs-menu {
+    display: none;
+    z-index: -1;
+}
+
+.devs-menu_on {
+    box-sizing: border-box;
+    background-image: url(../img/devs.png);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: 400px;
+    position: absolute;
+    left: 36%;
+    top: 10%;
+    text-align: center;
+    display: flex;
+    opacity: 1;
+    z-index: 10;
+    flex-direction: column;
+    padding: 90px 30px;
+}
+
+.devs-menu p {
+    margin: 0;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 34px;
+    color: aliceblue;
+    text-shadow: 1px 1px 5px black;
+
+}
+
