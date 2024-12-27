@@ -5,6 +5,10 @@ body {
     background-size: cover;
     margin: 0;
     position: relative;
+    overflow: hidden;
+    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="36" height="60" viewBox="0 0 24 24"><path fill="%23FFF" stroke="%23000" stroke-width="1" stroke-linejoin="round" d="M10 11V8.99c0-.88.59-1.64 1.44-1.86h.05A1.99 1.99 0 0 1 14 9.05V12v-2c0-.88.6-1.65 1.46-1.87h.05A1.98 1.98 0 0 1 18 10.06V13v-1.94a2 2 0 0 1 1.51-1.94h0A2 2 0 0 1 22 11.06V14c0 .6-.08 1.27-.21 1.97a7.96 7.96 0 0 1-7.55 6.48 54.98 54.98 0 0 1-4.48 0 7.96 7.96 0 0 1-7.55-6.48C2.08 15.27 2 14.59 2 14v-1.49c0-1.11.9-2.01 2.01-2.01h0a2 2 0 0 1 2.01 2.03l-.01.97v-10c0-1.1.9-2 2-2h0a2 2 0 0 1 2 2V11Z"></path></svg>'), pointer;
+    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"><g fill="none" stroke="%23000" stroke-width="1"><circle cx="12" cy="12" r="8.5"></circle><path d="M1 12h5M18 12h5M12 6V1.04M12 23v-4.96M11.95 11.95h.1v.1h-.1z"></path></g></svg>'), default;
+
 }
 
 .hp_bar {
@@ -24,5 +28,155 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 25px;
-    
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* gun */
+.block_gun {
+    width: 300px;
+    position: absolute;
+    top: 66%;
+    left: 55%;
+}
+
+.block_gun img {
+    width: 100%;
+}
+
+/* enemy */
+.enemy_zombie_default {
+    width: 250px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+
+.enemy_zombie_default img {
+    width: 100%;
+}
+
+.hp_bar_enemy {
+    width: 150px;
+    height: 20px;
+    border: 4px solid black;
+    position: absolute;
+    top: 15px;
+    left: 25%;
+
+}
+
+.hp_line_enemy {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.enemy_zombie_two {
+    display: none;
+    width: 110px;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+.enemy_zombie_two img {
+    width: 100%;
+}
+
+.hp_bar_enemy_two {
+    width: 150px;
+    height: 20px;
+    border: 4px solid black;
+    position: absolute;
+    top: 15px;
+    left: 25%;
+
+}
+
+.hp_line_enemy_two {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+/*  */
+.enemy_zombie_boss {
+    display: none;
+    width: 300px;
+    position: absolute;
+    top: 30%;
+    left: 70%;
+}
+
+.enemy_zombie_boss img {
+    width: 100%;
+}
+
+.hp_bar_enemy_boss {
+    width: 150px;
+    height: 20px;
+    border: 4px solid black;
+    position: absolute;
+    top: 15px;
+    left: 25%;
+
+}
+
+.hp_line_enemy_boss {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+/*  */
+.enemy_zombie_alpha {
+    width: 300px;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    display: none;
+}
+
+.enemy_zombie_alpha img {
+    width: 100%;
+}
+
+.hp_bar_alpha {
+    width: 300px;
+    height: 20px;
+    border: 4px solid black;
+    position: absolute;
+
+
+}
+
+.hp_line_alpha {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    text-shadow: 1px 1px 1px black;
 }
