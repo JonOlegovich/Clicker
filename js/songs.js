@@ -24,5 +24,3 @@ mouseOverEl[2].addEventListener("mouseover", () => {
 })
 
 //// controls songs
-// bg-music
-document.querySelector(".bg-music").volume = 0.2

@@ -10,3 +10,4 @@ export const hpZombieBoss = document.querySelector(".hp_line_enemy_boss")
 export const hpZombieAlpha = document.querySelector(".hp_line_alpha")
 // 
 // 
+export const hpMainHero = document.querySelector(".hp_line")

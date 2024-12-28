@@ -9,8 +9,19 @@ devMenu[1].addEventListener("click", () => {
     console.log("click")
 })
 
-document.body.addEventListener("keydown", (event)=>{
-    if(event.key === `Escape`){
-    listDevs.classList.remove("devs-menu_on")}
+document.body.addEventListener("keydown", (event) => {
+    if (event.key === `Escape`) {
+        listDevs.classList.remove("devs-menu_on")
+    }
     console.log("body")
+})
+// clickP
+const clickMenu = document.querySelector(".click")
+const clickMusic = document.querySelector(".bg-music")
+document.body.addEventListener("click", () => {
+   clickMenu.classList.add("clickHov")
+   clickMusic.play()
+   clickMusic.volume = 0.2
+   
+   
 })
