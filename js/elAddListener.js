@@ -8,9 +8,10 @@ import {
     enemyOne, enemyTwo,
     enemyBoss, enemyAlpha
 } from "../js/enemy.js"
-import { deagleSong } from "../js/master.js"
+import { deagleSong , animation} from "../js/master.js"
 import { enemyOb } from "./ObserverEnemy.js"
 enemyOb.subscribe((event) => {
+    animation()
     deagleSong()
     if(event === "zombieOne"){
         zombieElLister(enemyOne,hpZombieOne)

@@ -8,3 +8,5 @@ export const hpZombieOne = document.querySelector(".hp_line_enemy")
 export const hpZombieTwo = document.querySelector(".hp_line_enemy_two")
 export const hpZombieBoss = document.querySelector(".hp_line_enemy_boss")
 export const hpZombieAlpha = document.querySelector(".hp_line_alpha")
+// 
+// 
