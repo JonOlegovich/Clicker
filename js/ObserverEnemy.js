@@ -2,8 +2,8 @@ class ObserverEnemy {
     constructor() {
         this.subscribers = [ ]
     }
-    broadcast() {
-        this.subscribers.forEach(cb => cb());
+    broadcast(data) {
+        this.subscribers.forEach(cb => cb(data));
     }
     subscribe(callback) {
         this.subscribers.push(callback);
@@ -13,4 +13,4 @@ class ObserverEnemy {
     }
 }
 
-const enemyOb = new ObserverEnemy()
+ export const enemyOb = new ObserverEnemy()
