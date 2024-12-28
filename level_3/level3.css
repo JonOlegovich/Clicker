@@ -27,7 +27,7 @@ html,body{
     height: 50px;
     border: 1px solid red;
     margin-left: 20px;
-    
+    background-color: red;
 }
 .enemy_1{
     position: absolute;
