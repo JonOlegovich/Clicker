@@ -11,7 +11,7 @@
 
 
 // }
-
+function playerXp(){
 const bock = document.getElementById('xpPlay')
 let currentWidth = 300;
 
@@ -23,5 +23,6 @@ const interval = setInterval(() => {
         bock.style.display ='none'
     }
     bock.style.width = `${currentWidth}px`;
-},2000);
-
+},4000);
+}
+playerXp()

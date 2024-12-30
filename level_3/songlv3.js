@@ -17,10 +17,10 @@ playKick.addEventListener("click",()=>{
  console.log("click")
 })
 
-let block = document.getElementsByClassName("xpEnemy")
+// let block = document.getElementsByClassName("xpEnemy")
 
-playKick.addEventListener("click",()=>{
+// playKick.addEventListener("click",()=>{
 
-    document.querySelector('.decrease').style.width = "90%"
-    console.log ("red")
-})
+//     document.querySelector('.decrease').style.width = "90%"
+//     console.log ("red")
+// })
