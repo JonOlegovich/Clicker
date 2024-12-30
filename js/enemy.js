@@ -1,5 +1,6 @@
 import { zombieOne, zombieTwo, zombieBoss, zombieAlpha } from "../js/domEl.js"
 import { enemyOb } from "./ObserverEnemy.js"
+import { clearHp } from "./settingsHero.js"
 class EnemyPers {
     constructor(hp, name, enemy) {
         this.hp = hp
@@ -15,6 +16,7 @@ class EnemyPers {
             this.enemy.remove()
             if (this.nextEnemy) {
                 this.nextEnemy.style.display = "block";
+               
             }
         }
     }
