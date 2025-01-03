@@ -22,13 +22,34 @@ html,body{
     background-image: url(imgplayers/image3-18-removebg-preview.png);
     border: 2px solid green;
 }
+.blokPlayerXp{
+    display: flex;
+    align-items: center;
+}
+.blokPlayerXp img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.borderPlayerXp{
+    width: 300px;
+    height: 50px;
+    border: 3px solid rgb(51, 46, 46);
+    border-radius: 15px;
+}
 #xpPlay{
     width: 300px;
     height: 50px;
-    border: 1px solid red;
-    margin-left: 20px;
-    background-color: red;
+    border-radius: 15px;
+   
+    background-color: rgb(119, 29, 29);
     transition: width 0.5s ease;
+   display: flex;
+   align-items: center;
+    
+}
+.playerXp b{
+    font-size: 20px;
 }
 .enemy_1{
     position: absolute;
