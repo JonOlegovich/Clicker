@@ -14,10 +14,10 @@
 function playerXp(){
 const bock = document.getElementById('xpPlay')
 let currentWidth = 300;
-
+ 
 const interval = setInterval(() => {
-    currentWidth *= 0.9;
-
+    currentWidth *= 0.7;
+    
     if (currentWidth <= 0){
         clearInterval(interval);
         bock.style.display ='none'
@@ -26,3 +26,17 @@ const interval = setInterval(() => {
 },4000);
 }
 playerXp()
+
+//Уменьшение жизни Игрока
+function playerXpMin () {
+    const b = document.getElementById('counter')
+   //let currentWidth = 100
+
+   const interval = setInterval(() =>{
+    let currentValue = parseInt(b.textContent);
+    currentValue -= 20
+    b.textContent = currentValue;
+   },4000)
+}
+playerXpMin()
+ 

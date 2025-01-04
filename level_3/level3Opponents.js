@@ -3,7 +3,7 @@
 function hpEnemy (){
 
     const decrease = document.getElementById('decrease')
-    let width = 350 ;
+    let width = 300 ;
     const minSize = 0;
      decrease.style.width = `${width}px`;
 

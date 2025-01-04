@@ -3,7 +3,7 @@
 const playKick = document.getElementById("boss")
 
 const mouse = document.getElementsByClassName("audi")
-const audio = new Audio("level3audio/kick.mp3")
+const audio = new Audio("level3audio/desert-eagle-cs.mp3")
 
 console.log(mouse)
 
