@@ -22,6 +22,4 @@ document.body.addEventListener("click", () => {
    clickMenu.classList.add("clickHov")
    clickMusic.play()
    clickMusic.volume = 0.2
-   
-   
 })
