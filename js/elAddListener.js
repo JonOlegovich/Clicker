@@ -2,7 +2,7 @@ import { clearHp } from "./settingsHero.js"
 import {
     zombieOne, zombieTwo, zombieBoss,
     zombieAlpha, hpZombieOne, hpZombieTwo,
-    hpZombieBoss, hpZombieAlpha
+    hpZombieBoss, hpZombieAlpha, deathMenu
 } from "../js/domEl.js"
 import { killer } from "./hero.js"
 import {
@@ -28,6 +28,7 @@ enemyOb.subscribe((event) => {
         if(enemyAlpha.hp <= 0){
             console.log("enemy killed")
             clearInterval(clearHp)
+
         }
 
     }
