@@ -19,12 +19,16 @@ const interval = setInterval(() => {
     currentWidth *= 0.7;
     
     if (currentWidth <= 0){
-        clearInterval(interval);
-        bock.style.display ='none'
+        clearInterval(interval) ;
+        return;
+       // bock.style.display ='none'
     }
     bock.style.width = `${currentWidth}px`;
 },4000);
 }
+
+
+
 playerXp()
 
 //Уменьшение жизни Игрока
@@ -36,6 +40,10 @@ function playerXpMin () {
     let currentValue = parseInt(b.textContent);
     currentValue -= 20
     b.textContent = currentValue;
+    if(currentValue <= 0){
+        clearInterval(interval)
+        b.textContent = currentValue
+    }
    },4000)
 }
 playerXpMin()
