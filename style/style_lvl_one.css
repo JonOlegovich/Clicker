@@ -47,6 +47,7 @@ body {
     position: absolute;
     top: 90px;
     left: 100px;
+    z-index: 99;
 }
 .heath_line{
     border-radius: 7px 20px 20px 7px;
