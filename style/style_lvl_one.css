@@ -52,8 +52,7 @@ body {
     border-radius: 7px 20px 20px 7px;
     width: 100%;
     height: 100%;
-    background-color: green;
-    color: white;
+    background-color: greenyellow;
     text-shadow: 1px 1px 1px black;
     transition: width 188ms;
 }
