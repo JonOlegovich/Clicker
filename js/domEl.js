@@ -16,3 +16,5 @@ export const damage = document.querySelector(".damage")
 export const death = document.querySelector(".death")
 // 
 export const blur = document.querySelector(".bodu-blur")
+// 
+export const body =   document.body

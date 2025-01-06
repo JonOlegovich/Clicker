@@ -384,3 +384,8 @@ body {
         transform: translateX(0) translateY(0) scale(1);
     }
 }
+.health-possion{
+    width: 100px;
+    height: 110px;
+    position: absolute;
+}
