@@ -39,6 +39,24 @@ body {
 
 
 }
+.heath{
+    border-radius: 7px 20px 20px 7px;
+    border: 2px black solid;
+    width: 300px;
+    height: 20px;
+    position: absolute;
+    top: 90px;
+    left: 100px;
+}
+.heath_line{
+    border-radius: 7px 20px 20px 7px;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    transition: width 188ms;
+}
 
 .hp_line {
     display: flex;
@@ -67,6 +85,7 @@ body {
     position: fixed;
     top: 66%;
     left: 55%;
+    z-index: 99;
 }
 
 .anim {
@@ -204,6 +223,7 @@ body {
     top: 20%;
     left: 40%;
     display: none;
+    animation: bossMove 3s infinite ease-in-out;
 }
 
 .enemy_zombie_alpha img {
@@ -250,8 +270,9 @@ body {
         transform: translateZ(0) translateY(0) scale(1.15);
     }
 }
-.bodu-blur{
-    display: flex;
+
+.bodu-blur {
+    display: none;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -276,11 +297,15 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    backdrop-filter: blur(10px); /* Размытие фона позади */
-    -webkit-backdrop-filter: blur(10px); /* Для поддержки в Safari */
-    background-color: rgba(255, 255, 255, 0.3); /* Полупрозрачный белый фон */
+    backdrop-filter: blur(10px);
+    /* Размытие фона позади */
+    -webkit-backdrop-filter: blur(10px);
+    /* Для поддержки в Safari */
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Полупрозрачный белый фон */
     overflow: hidden;
 }
+
 .deathMenu img {
     width: 100%;
     height: 100%;
@@ -298,24 +323,64 @@ body {
     bottom: 20px;
     transition: transform 0.3s ease, background-color 0.3s ease;
     display: inline-block;
+    animation: buttonPulse 2s ease infinite;
 }
 
 .button a {
     text-decoration: none;
     color: black;
-    display: block; 
+    display: block;
     width: 100%;
     height: 100%;
-    text-align: center; 
-    line-height: 1.5; 
+    text-align: center;
+    line-height: 1.5;
     transition: 300ms;
 }
 
 .button:hover {
-    transform: scale(1.1); 
-    background-color: #e0ffe0; 
+    transform: scale(1.1);
+    background-color: #e0ffe0;
 }
 
 .button a:hover {
-    color: green; 
+    color: green;
+}
+
+@keyframes buttonPulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px rgba(0, 255, 0, 0.6);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@keyframes bossMove {
+    0% {
+        transform: translateX(0) translateY(0) scale(1);
+    }
+
+    25% {
+        transform: translateX(300px) translateY(-40px) scale(1.1);
+    }
+
+    50% {
+        transform: translateX(-200px) translateY(20px) scale(1);
+    }
+
+    75% {
+        transform: translateX(-150px) translateY(-30px)scale(1.1);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0) scale(1);
+    }
 }

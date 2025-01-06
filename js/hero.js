@@ -7,7 +7,7 @@ class MainHero {
     }
     damage() {
 
-        this.hp -= 20
+        this.hp -= 0
         heroOb.broadcast("damage")
         if (this.hp <= 0) {
             heroOb.broadcast("death")

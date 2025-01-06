@@ -15,4 +15,4 @@ export const hpMainHeroNum = document.querySelector(".hp_number")
 export const damage = document.querySelector(".damage")
 export const death = document.querySelector(".death")
 // 
-export const deathMenu = document.querySelector(".deathMenu")
+export const blur = document.querySelector(".bodu-blur")

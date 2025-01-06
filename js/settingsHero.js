@@ -1,6 +1,6 @@
 import { damage, } from "./domEl.js";
 import { killer } from "./hero.js";
-import { hpMainHero, hpMainHeroNum ,death} from "./domEl.js"
+import { hpMainHero, hpMainHeroNum ,death,blur} from "./domEl.js"
 import { heroOb } from "./obServerHero.js";
 export let clearHp = setInterval(() => {
     killer.damage()
@@ -16,5 +16,6 @@ heroOb.subscribe((event) => {
     else if (event === "death") {
         death.play()
         clearInterval(clearHp)
+        blur.style.display = "flex"
     }
 })

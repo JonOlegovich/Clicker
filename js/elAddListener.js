@@ -2,7 +2,7 @@ import { clearHp } from "./settingsHero.js"
 import {
     zombieOne, zombieTwo, zombieBoss,
     zombieAlpha, hpZombieOne, hpZombieTwo,
-    hpZombieBoss, hpZombieAlpha, deathMenu
+    hpZombieBoss, hpZombieAlpha, blur,
 } from "../js/domEl.js"
 import { killer } from "./hero.js"
 import {
@@ -28,6 +28,10 @@ enemyOb.subscribe((event) => {
         if(enemyAlpha.hp <= 0){
             console.log("enemy killed")
             clearInterval(clearHp)
+            setTimeout(()=>
+            {
+                location.href = "./lvl_two.html"
+            },2000)
 
         }
 
@@ -35,18 +39,18 @@ enemyOb.subscribe((event) => {
 
 })
 zombieOne.addEventListener("click", () => {
-    enemyOne.damageOnEnemy(100)
+    enemyOne.damageOnEnemy(20)
 })
 zombieTwo.addEventListener("click", () => {
-    enemyTwo.damageOnEnemy(100)
+    enemyTwo.damageOnEnemy(15)
 
 })
 zombieBoss.addEventListener("click", () => {
-    enemyBoss.damageOnEnemy(100)
+    enemyBoss.damageOnEnemy(8)
 
 })
 zombieAlpha.addEventListener("click", () => {
-    enemyAlpha.damageOnEnemy(100)
+    enemyAlpha.damageOnEnemy(3.5)
 
 })
 function zombieElLister(enemy, el) {
