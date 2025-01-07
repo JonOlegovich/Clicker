@@ -275,9 +275,16 @@ body {
         transform: translateZ(0) translateY(0) scale(1.15);
     }
 }
-
-.bodu-blur {
-    display: none;
+.bodu-blur{
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+    transition: 800ms;
+}
+.bodu-blur-on {
+    visibility: visible;
+    pointer-events: auto;
+    opacity: 1;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -285,6 +292,7 @@ body {
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(15px);
+    transition: 800ms;
 
 }
 

@@ -6,7 +6,7 @@ export let clearHp = setInterval(() => {
     killer.damage()
 }, 2500)
 
-heroOb.subscribe((event) => {
+heroOb.subscribe((event) => {            
     if (event === "damage") {
         damage.play()
         hpMainHero.style.width = `${killer.hp}%`
@@ -16,6 +16,6 @@ heroOb.subscribe((event) => {
     else if (event === "death") {
         death.play()
         clearInterval(clearHp)
-        blur.style.display = "flex"
+        blur.classList.add("bodu-blur-on")        
     }
 })
