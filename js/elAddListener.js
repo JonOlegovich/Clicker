@@ -11,6 +11,7 @@ import {
 } from "../js/enemy.js"
 import { deagleSong, animation } from "../js/master.js"
 import { enemyOb } from "./ObserverEnemy.js"
+import { nextlvl } from "./funcNextLvl.js"
 enemyOb.subscribe((event) => {
     animation()
     deagleSong()
@@ -30,8 +31,8 @@ enemyOb.subscribe((event) => {
             clearInterval(clearHp)
             setTimeout(()=>
             {
-                location.href = "./lvl_two.html"
-            },2000)
+                nextlvl()
+            },3000)
 
         }
 

@@ -14,6 +14,7 @@ export const hpMainHero = document.querySelector(".hp_line")
 export const hpMainHeroNum = document.querySelector(".hp_number")
 export const damage = document.querySelector(".damage")
 export const death = document.querySelector(".death")
+export const stamin = document.querySelector(".heath_line")
 // 
 export const blur = document.querySelector(".bodu-blur")
 // 
