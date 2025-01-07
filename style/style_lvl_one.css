@@ -388,4 +388,5 @@ body {
     width: 100px;
     height: 110px;
     position: absolute;
+    z-index: 99;
 }
