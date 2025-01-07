@@ -1,0 +1,1 @@
+export function nextlvl() { location.href = "./lvl_two.html" }

@@ -1,6 +1,7 @@
 import { hpMainHero, hpMainHeroNum, death } from "./domEl.js"
 import { clearHp } from "./settingsHero.js"
 import { heroOb } from "./obServerHero.js"
+import { createEl } from "./createDomEl.js"
 class MainHero {
     constructor(hp) {
         this.hp = hp
@@ -17,4 +18,5 @@ class MainHero {
     }
 }
 export const killer = new MainHero(100)
+
 

@@ -1,5 +1,6 @@
 import "../js/elAddListener.js"
-import { killer } from ".././js/hero.js"
+import { killer } from "./hero.js"
+import "./healtHero.js"
 const animShot = document.querySelector(".block_gun")
 export const deagleEl = document.querySelector(".deagleSong")
 export function deagleSong() {
