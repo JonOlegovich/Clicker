@@ -17,16 +17,20 @@ const boss = document.getElementById('boss')
    })
 //Уменьшения текста жизни у врага от 100  до 0
 
+
+//Достть картинку босса
+
    const bossProsent = document.getElementById('bossProsent')
 
-   let correntProsent = parseInt(bossProsent.textContent);
+   
 
    boss.addEventListener('click',() =>{
+    let correntProsent = parseInt(bossProsent.textContent);
 
-    
     correntProsent -= 10;
     bossProsent.textContent = correntProsent;
-    if(correntProsent === 0){
+    if(correntProsent <= 0){
         bossProsent.textContent = 0
+
     }
    })

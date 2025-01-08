@@ -24,17 +24,17 @@ const interval = setInterval(() => {
        // bock.style.display ='none'
     }
     bock.style.width = `${currentWidth}px`;
-},4000);
+},3000);
 }
 
 
-
 playerXp()
-
+//Музыка когда жизни у игрока закончились
+const audioGameOver = new Audio("level3audio/skipekick.mp3")
 //Уменьшение жизни Игрока
 function playerXpMin () {
     const b = document.getElementById('counter')
-   //let currentWidth = 100
+   const gameOver = document.getElementById('game_OverId')
 
    const interval = setInterval(() =>{
     let currentValue = parseInt(b.textContent);
@@ -43,8 +43,14 @@ function playerXpMin () {
     if(currentValue <= 0){
         clearInterval(interval)
         b.textContent = currentValue
+        gameOver.style.display ='block'
+        
+        audioGameOver.volume = 1;
+        audioGameOver.play()
     }
-   },4000)
+   },3000)
 }
 playerXpMin()
+
+
  

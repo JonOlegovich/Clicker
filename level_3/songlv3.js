@@ -13,14 +13,8 @@ playKick.addEventListener("click",()=>{
     audio.play()
    
 
-   
- //console.log("click")
 })
 
-//  let block = document.getElementsByClassName("xpEnemy")
 
-//  playKick.addEventListener("click",()=>{
 
-//      document.querySelector('.decrease').style.width = "90%"
-//      console.log ("red")
-//  })
+
