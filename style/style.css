@@ -182,10 +182,9 @@ li:hover {
 
 .devs-menu p {
     margin: 0;
-    font-style: italic;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 34px;
     color: aliceblue;
-    text-shadow: 1px 1px 5px black;
+    text-shadow: 1px 1px 2px black;
 
 }
