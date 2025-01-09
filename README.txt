@@ -1,4 +1,4 @@
- Clicker:Mini Indie Game  
+ Clicker:фвMini Indie Game  
 
 1. Використання збереження:  
    - Ми використовуємо LocalStorage для збереження:  
