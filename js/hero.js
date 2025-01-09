@@ -9,12 +9,13 @@ class MainHero {
     damage() {
 
         this.hp -= 20
-        heroOb.broadcast("damage")
         if (this.hp <= 0) {
-            heroOb.broadcast("death")
             this.hp = 0
-        }
+            heroOb.broadcast("death")
+            return
 
+        }
+        heroOb.broadcast("damage")
     }
 }
 export const killer = new MainHero(100)

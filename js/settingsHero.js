@@ -9,13 +9,17 @@ export let clearHp = setInterval(() => {
 heroOb.subscribe((event) => {            
     if (event === "damage") {
         damage.play()
+        localStorage.setItem("hp",killer.hp)
         hpMainHero.style.width = `${killer.hp}%`
         hpMainHeroNum.textContent = `${killer.hp}%`
         console.log(`Текущий HP: ${killer.hp}`)
     }
     else if (event === "death") {
-        death.play()
         clearInterval(clearHp)
+        localStorage.setItem("hp",killer.hp)
+        hpMainHero.style.width = `${killer.hp}%`
+        hpMainHeroNum.textContent = `${killer.hp}%`
+        death.play()
         blur.classList.add("bodu-blur-on")        
     }
 })

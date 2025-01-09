@@ -1,4 +1,5 @@
-"use strict"
+import "./clear.js"
+
 const listDevs = document.querySelector(".devs-menu")
 console.log(listDevs)
 
