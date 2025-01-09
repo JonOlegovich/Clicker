@@ -5,7 +5,7 @@ const again_Id = document.getElementById('again_Id')
 
 //Сделать чтбы при клике на mainMenu Возвращался в главное меню
 mainMenu.addEventListener('click',() =>{
- window.location.href ="../index.html"
+
 })
 
 // Чтобы при клике возращался снова на этот Уровень
