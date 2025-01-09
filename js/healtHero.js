@@ -1,7 +1,7 @@
 import { createEl, buff } from "./createDomEl.js";
 import { killer } from "./hero.js";
-import { hpMainHero, hpMainHeroNum, stamin } from "./domEl.js";
- const drink = document.querySelector(".drinkPotion")
+import { hpMainHero, hpMainHeroNum, stamin , body} from "./domEl.js";
+const drink = document.querySelector(".drinkPotion")
 const maxHP = 100
 const maxDelayStamina = 5
 const staminaLine = 4
@@ -12,18 +12,20 @@ let staminProgress = 0
 function healHero(event) {
     createEl();
     if (buff) {
-        buff.addEventListener("click", () => {
-            killer.hp += 30;
-            count += 1
-            drink.currentTime = 0.5
-            drink.play()
-            
-            if (killer.hp >= maxHP) {
-                killer.hp = maxHP
+       body.addEventListener("keydown", (event) => {
+            if (event.code === "KeyH") {
+                killer.hp += 30;
+                count += 1
+                drink.currentTime = 0.5
+                drink.play()
+
+                if (killer.hp >= maxHP) {
+                    killer.hp = maxHP
+                }
+                hpMainHero.style.width = `${killer.hp}%`
+                hpMainHeroNum.textContent = `${killer.hp}%`
+                buff.remove();
             }
-            hpMainHero.style.width = `${killer.hp}%`
-            hpMainHeroNum.textContent = `${killer.hp}%`
-            buff.remove();
         }, { once: true });
     }
 }
