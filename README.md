@@ -1,86 +1,84 @@
 <h1>🎮 Clicker: Mini Indie Game</h1>
 
-<p>Добро пожаловать в <strong>Clicker</strong> — увлекательную мини-игру, где вам предстоит управлять ресурсами, сражаться с врагами и покорять возрастающие уровни сложности.</p>
+<p>Welcome to <strong>Clicker</strong> — an exciting mini-game where you manage resources, fight enemies, and conquer increasingly challenging levels.</p>
 
 <hr />
 
-<h2>🔑 Ключевые особенности</h2>
-
-<h3>📂 Сохранение данных</h3>
+<h2>🔑 Key Features</h2>
 <ul>
-  <li>Ваш прогресс сохраняется даже после перезагрузки страницы:</li>
+  <li>Your progress is saved even after reloading the page:</li>
   <ul>
-    <li><strong>Количество здоровья (HP)</strong></li>
-    <li><strong>Прогресс игры</strong></li>
+    <li><strong>Health Points (HP)</strong></li>
+    <li><strong>Game progress</strong></li>
   </ul>
 </ul>
 
-<h3>⚙️ Игровые механики</h3>
+<h3>⚙️ Game Mechanics</h3>
 <ul>
-  <li><strong>Сохранение здоровья</strong>: система HP позволяет следить за состоянием персонажа.</li>
-  <li><strong>Зелья здоровья</strong>: появляются случайным образом, давая возможность лечить персонажа.</li>
-  <li><strong>Появление врагов</strong>: противники становятся сложнее с прогрессом игры.</li>
-  <li><strong>Атака врагов</strong>: сражайтесь с врагами с помощью огнестрельного оружия.</li>
+  <li><strong>Health Preservation</strong>: The HP system helps monitor the character's condition.</li>
+  <li><strong>Health Potions</strong>: Spawn randomly, allowing you to heal your character.</li>
+  <li><strong>Enemy Spawning</strong>: Enemies become more challenging as the game progresses.</li>
+  <li><strong>Enemy Attacks</strong>: Fight enemies using firearms.</li>
 </ul>
 
-<h3>⌨️ Управление</h3>
+<h3>⌨️ Controls</h3>
 <ul>
-  <li><strong>ESC</strong>: закрытие меню.</li>
-  <li><strong>H</strong>: лечение персонажа.</li>
+  <li><strong>ESC</strong>: Close the menu.</li>
+  <li><strong>H</strong>: Heal the character.</li>
 </ul>
 
 <hr />
 
-<h2>🛠️ Использованные технологии</h2>
+<h2>🛠️ Technology Stack</h2>
 <ul>
-  <li><strong>HTML5</strong>: для структуры игры.</li>
-  <li><strong>CSS3</strong>: для оформления, анимаций и стилизации.</li>
+  <li><strong>HTML5</strong>: For game structure.</li>
+  <li><strong>CSS3</strong>: For styling, animations, and design.</li>
   <li><strong>JavaScript</strong>:</li>
   <ul>
-    <li>Асинхронное программирование.</li>
-    <li>Паттерн Observer.</li>
-    <li>Логика игры.</li>
+    <li>Asynchronous programming.</li>
+    <li>Observer pattern.</li>
+    <li>Game logic.</li>
   </ul>
-  <li><strong>LocalStorage</strong>: сохранение прогресса между игровыми сессиями.</li>
+  <li><strong>LocalStorage</strong>: To save progress between game sessions.</li>
 </ul>
 
 <hr />
 
-<h2>🎨 Дизайн</h2>
+<h2>🎨 Design</h2>
 <ul>
-  <li><strong>Графика</strong>:</li>
+  <li><strong>Graphics</strong>:</li>
   <ul>
-    <li>GIF-анимации.</li>
-    <li>Изображения персонажей и оружия.</li>
-    <li>ХП-бар для главного героя.</li>
+    <li>GIF animations.</li>
+    <li>Character and weapon images.</li>
+    <li>HP bar for the main character.</li>
   </ul>
-  <li><strong>Звуки и музыка</strong>:</li>
+  <li><strong>Sound and Music</strong>:</li>
   <ul>
-    <li>Эффекты питья зелья, выстрелов и фоновой музыки.</li>
+    <li>Sound effects for potion drinking, shooting, and background music.</li>
   </ul>
-  <li><strong>Меню</strong>:</li>
+  <li><strong>Menu</strong>:</li>
   <ul>
-    <li>Плавные переходы между элементами меню.</li>
+    <li>Smooth transitions between menu elements.</li>
   </ul>
 </ul>
 
 <hr />
 
-<h2>🤝 Авторы</h2>
+<h2>🤝 Authors</h2>
 <ul>
-  <li><strong>Логика игры</strong>: Влад и Женя.</li>
-  <li><strong>Дизайн</strong>: Влад и Женя.</li>
+  <li><strong>Game Logic</strong>: Vlad and Zhenya.</li>
+  <li><strong>Design</strong>: Vlad and Zhenya.</li>
 </ul>
 
 <hr />
 
-<h2>📌 Установка и запуск</h2>
+<h2>📌 Installation and Launch</h2>
 <ol>
-  <li>Склонируйте репозиторий:</li>
+  <li>Clone the repository:</li>
   <pre><code>git clone https://github.com/JonOlegovich/Clicker.git</code></pre>
-  <li>Откройте файл <code>index.html</code> в вашем браузере.</li>
+  <li>Open the <code>index.html</code> file in your browser.</li>
 </ol>
 
 <hr />
 
-<p>🎉 <strong>Спасибо за внимание!</strong> Надеемся, вам понравилась наша мини-инди игра. Мы будем рады услышать ваши отзывы и идеи!</p>
+<p>🎉 <strong>Thank you for your attention!</strong> We hope you enjoy our mini indie game. We look forward to your feedback and ideas!</p>
